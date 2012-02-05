@@ -14,7 +14,7 @@ Sean:
     name: "Sean Keys"
     nationality: US
     forum_user: "Sean0"
-    birth_year: 0
+    birth_year: 1983
 Marcos:
     name: "Marcos Chaparro"
     nationality: AR
@@ -29,7 +29,7 @@ Spudmn:
     name: "Aaron Keith"
     nationality: NZ
     forum_user: "Spudmn"
-    birth_year: 0
+    birth_year: 1972
 Goggles:
     name: "Daniel Lucas"
     nationality: NZ
@@ -39,5 +39,5 @@ Peter:
     name: "Peter Johnson"
     nationality: US
     forum_user: "Peter"
-    birth_year: 0
+    birth_year: 1989
 
