@@ -1,0 +1,43 @@
+# FreeEMS people: users, installers, builders, drivers, owners, etc
+
+Fred:
+    name: "Fred Cooke"
+    nationality: NZ
+    forum_user: "Fred"
+    birth_year: 1979
+Preston:
+    name: "Preston Saunders"
+    nationality: NZ
+    forum_user: "Preston"
+    birth_year: 1983
+Sean:
+    name: "Sean Keys"
+    nationality: US
+    forum_user: "Sean0"
+    birth_year: 0
+Marcos:
+    name: "Marcos Chaparro"
+    nationality: AR
+    forum_user: "nitrousnrg"
+    birth_year: 1987
+Sim:
+    name: "Simeon Veldstra"
+    nationality: CA
+    forum_user: "sim"
+    birth_year: 0
+Spudmn:
+    name: "Aaron Keith"
+    nationality: NZ
+    forum_user: "Spudmn"
+    birth_year: 0
+Goggles:
+    name: "Daniel Lucas"
+    nationality: NZ
+    forum_user: "em_knaps"
+    birth_year: 0
+Peter:
+    name: "Peter Johnson"
+    nationality: US
+    forum_user: "Peter"
+    birth_year: 0
+

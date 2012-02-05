@@ -1,58 +1,68 @@
 # FreeEMS engine/vehicle history database
 
 Volvo740:
-    owner:
-      name: "Fred Cooke"
-      nationality: NZ
-      forum_user: "Fred"
-      age_at_time: 30
+    owner: Fred
     story: "Casual great American road trip capitalised on to make history with the very first FreeEMS powered engine!"
     thread: http://forum.diyefi.org/viewtopic.php?f=55&t=1068
     status: "Uninstalled and vehicle sold a few weeks later due to end of holiday in USA"
     technical:
       vehicle:
-        make: Volvo
-        model: 740
-        trim: GL
+        make: "Volvo"
+        model: "740"
+        trim: "GL"
         year: 1992
         comments: "Dead stock, injector wire relay switched to run from either FreeEMS or OEM ECU"
       engine:
-        make: Volvo
-        model: B230F
+        make: "Volvo"
+        model: "B230F"
         config: I4
-        capacity: 2.3
+        capacity: 2.3 # In litres
         comments: "Dead stock, no oil change for 20,000km"
       control:
-        type: injection
+        type: injection # XOR ignition XOR full_control
         firmware_type: "Fred's Vanilla"
         firmware_version: "97f5ad1f0e6b2ef30bd987c3becc764a5d658bf5"
         firmware_s19_name: "Simple"
         hardware_type: DIY-TA
-        hardware_built_by: owner
-        hardware_installed_by: owner
+        hardware_built_by: Fred
+        hardware_installed_by: Fred
         input_style: "pre-conditioned pulse per cylinder"
         ignition_style: "OEM distributor"
         injection_style: "batch, one channel, four injections per cycle"
         comments: "On line 110 or 111 of src/coreVarsGenerator.c, change TRUE to FALSE. OEM ignition computer reads 36 minus 1 crank wheel and delivers square wave to OEM fuel computer AND FreeEMS"
-    firsts:
-      start:
-        date: "Friday October 23rd, 2009 at around 2:15am GMT" # Needs standardising, copy pasted
-        driver: owner
+    achievements:
+      first_start:
+        date: "2009-10-23 02:15:00" # Date in UTC with format: "YYYY-mm-dd HH:MM:SS" 24 hour clock
+        driver: Fred
         location:
           city: "Baltimore"
           region: "Maryland"
           country: USA
-      drive:
-        date: "Sunday November 1st, 2009 at around 8:45pm GMT" # Needs standardising, copy pasted
-        driver: owner
+        comments: "Ran rough with electrical noise on the input, but ran nonetheless!"
+      first_drive:
+        date: "2009-11-01 20:45:00" # Date in UTC with format: "YYYY-mm-dd HH:MM:SS" 24 hour clock
+        driver: Fred
         location: 
           city: "Pompano Beach"
           region: "Florida"
           country: USA
-      features:
-        - FreeEMS
-        - Injection
-        - Volvo car
-        - I4 engine
-        - B2XX engine
+        comments: "Solved electrical noise issue then immediately went for a test drive, success!"
+      firsts:
+        - "FreeEMS"
+        - "Injection"
+        - "Volvo car"
+        - "I4 engine"
+        - "B2XX engine"
+
+TheRedTruck:
+HotelHyundai:
+SilverTop:
+TurboCamaro:
+ArgyPalio:
+SnotRocket:
+RacingMini:
+TurboSlater:
+PetersJSeries:
+
+# Who's next??? :-)
 
