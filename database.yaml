@@ -26,13 +26,14 @@ Volvo740:
         type: injection
         firmware_type: "Fred's Vanilla"
         firmware_version: "97f5ad1f0e6b2ef30bd987c3becc764a5d658bf5"
+        firmware_s19_name: "Simple"
         hardware_type: DIY-TA
         hardware_built_by: owner
         hardware_installed_by: owner
         input_style: "pre-conditioned pulse per cylinder"
+        ignition_style: "OEM distributor"
         injection_style: "batch, one channel, four injections per cycle"
-        igntion_style: "OEM distributor"
-        comments: "OEM ignition computer reads 36 minus 1 crank wheel and delivers square wave to OEM fuel computer AND FreeEMS"
+        comments: "On line 110 or 111 of src/coreVarsGenerator.c, change TRUE to FALSE. OEM ignition computer reads 36 minus 1 crank wheel and delivers square wave to OEM fuel computer AND FreeEMS"
     firsts:
       start:
         date: "Friday October 23rd, 2009 at around 2:15am GMT" # Needs standardising, copy pasted
