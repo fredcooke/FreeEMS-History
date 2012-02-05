@@ -1,0 +1,63 @@
+# Example vehicle data with description of how to use each field
+
+# Please copy the contents of this file into the vehicles.yaml
+# database file and replace the example values and comments
+# with your values (and own comments, if you like).
+
+# Please do not include the explanation comments in your entry
+
+CarIdentifier: # A named symbol under which the data is stored. If you stick to upper/lower case a-z letters with no symbols or space, you can't go wrong.
+    owner: PersonIdentifier # A named symbol reference to an entry in the people.yaml file. Add your people to tha file first and make this match exactly.
+    story: "A brief description of the story surrounding your installation and running of FreeEMS on your engine/car."
+    thread: "http://forum.diyefi.org/viewtopic.php?f=55&t=1568" # See this link for example threads. You should post a thread with photos and videos first.
+    status: "A brief description of the current status of the install, vehicle, level of satisfaction with the system, etc."
+    technical: # Technical details of the vehicle, with vehicle used in the loosest possible sense, including free standing engines, boats, planes, etc.
+      vehicle: # Details of the "vehicle" as installed on.
+        make: "Custom" # The brand of the vehicle, such as GM, Ford, Toyota, Nissan, Mazda, Honda, Citroen, Renault, Lada, BMW, Mercedes, etc. 
+        model: "HotRod" # The model of the vehicle, such as Camaro, Mustang, Levin, Skyline, RX-7, CRX, GS, Clio, Niva, 5 Series, C Series, etc.
+        trim: "Custom" # The trim of the vehicle, such as Z28, GT, BZ-G, GTR, RS, Si, Club, "", Cossack, 525ix, C55 AMG, etc.
+        year: 2012 # The year of manufacture of the vehicle
+        comments: "Any details that you think are pertinent such as state of modification or rareness, etc."
+      engine: # Details of the engine that FreeEMS controls or controlled
+        make: "Mazda" # The brand of the engine, see the make of the vehicle above for examples.
+        model: "JE-ZE" # The model of the engine, such as LT1, 335/Cleveland, 4-AGE, RB26DETT, F8-DOHC, B16A1, GSA, C-Type, 1.7, M52B25, M113, etc.
+        config: V6 # One of the following I2,I3,I4,I5,I6,I8,V2,V4,V6,V8,V10,V12,F2,F4,F6,W1,W2,W3,W4,R5,R7,R9 (Inline, V, Flat/Boxer, Wankel, Radial)
+        capacity: 2.3 # The displacement of the engine through one of it's natural cycles, in litres
+        comments: "Any details that you think are pertinent such as state of modification or rareness, etc."
+      control: # Details of the engine control systems and FreeEMS fw/hw variants
+        type: full_control # How much FreeEMS is in charge of. Select one of full_control, ignition_only, injection_only
+        firmware_type: "Fred's Vanilla" # Whose repository contains the following hash:
+        firmware_version: "3klj3kj5klj52j34lkj4lk3j4kl3j" # The git hash or tag of the firmware which first ran your engine
+        firmware_s19_name: "Simple" # The name of the s19 file that you loaded onto your hardware without the .s19 suffix
+        hardware_type: DIY-TA # One of the following DIY-TA, DIY-CPU, Puma-Spin-1, RavAGE, Jaguar, CatPower, DFH
+        hardware_built_by: PersonIdentifier # This defaults to the same as the owner if it is left out, if someone else built your unit, add them to people.yaml
+        hardware_installed_by: PersonIdentifier # Ditto ^
+        rpm_input_style: "Describe the sensor configuration such as Optical, Hall, VR, and the tooth count for generalised decoders, and anything else you think is interesting"
+        ignition_style: "Wasted spark inductive" # Prefix with OEM if not controlled by FreeEMS, then one of Distributor, Wasted spark, COP, CNP and inductive, CDI, etc.
+        injection_style: "Semi-sequential port" # Sequential, Semi-Sequential, Batch+number of injections per cycle+number of differently timed outputs and physical style
+        comments: "Any details that you think are pertinent such as customisations to the hardware or firmware, etc."
+    achievements: # What was special about this install, first start, first drive (if in a chassis), first user of various features, hardware, etc.
+      first_start: # Details of the all important first start!
+        date: "2012-02-05 02:15:00" # Date in UTC with format: "YYYY-mm-dd HH:MM:SS" 24 hour clock
+        driver: PersonIdentifier # Who turned the key? Defaults to the same as owner if omitted
+        location: # Where did the momentus occasion occur?
+          city: "SomeCity" # NYC, Tokyo, London, Milan, Paris, AUCKLAND!!!
+          region: "SomeArea" # If nothing is appropriate due to the size and configuration of your country, this field is optional
+          country: NZ # Two letter country code: http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+        comments: "Any details that you think are pertinent such as how it ran, who was there, etc."
+      first_drive: # Details of the all important first drive!
+        date: "2012-02-05 02:15:00" # Date in UTC with format: "YYYY-mm-dd HH:MM:SS" 24 hour clock
+        driver: PersonIdentifier # Who turned guided it down the road/harbour/air-strip? Defaults to the same as owner if omitted
+        location: # The place where those endangered by your testing lived.
+          city: "SomeCity" # Same as in first start
+          region: "SomeArea" # Same as in first_start (optional)
+          country: NZ # Same as in first_start
+        comments: "Any details that you think are pertinent such as how it ran, who was there, etc."
+      firsts: # A list of features/hardware/systems/configurations/etc that your install did/used for the first time
+        - "One amazing thing"
+        - "Another amazing thing"
+        - "Each starting with a hyphen"
+        - "Each not present in other lists above"
+
+# Who's next??? :-)
+
