@@ -12,6 +12,15 @@ add your information to this database. If you don't want to, or don't know how
 to use git, then you can simply download the yaml file, edit it, and upload to
 the forum for someone else to integrate for you.
 
+If you do add your own data, and have the necessary ruby prerequisits installed,
+then before submitting it, please verify the file in one or both of these ways:
+
+ - ruby -ryaml -e "p YAML.load_file(ARGV[0])" vehicles.yaml
+ - ruby -ryaml -rpp -e "pp YAML.load_file(ARGV[0])" vehicles.yaml
+
+The first one will print a large and dense block of data, or an error. The
+second one will print a well formatted "pretty" block of data or an error.
+
 ### Thanks
 
 Lastly, I offer my sincere heartfelt thanks to all of those who have become
