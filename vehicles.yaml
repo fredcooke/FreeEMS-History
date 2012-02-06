@@ -51,12 +51,66 @@ Volvo740:
         comments: "Solved electrical noise issue then immediately went for a test drive, success!"
       firsts:
         - "FreeEMS"
+        - "In US"
         - "Injection"
         - "Volvo car"
         - "I4 engine"
         - "B2XX engine"
 
-#TheRedTruck:
+TheRedTruck:
+    owner: Fred
+    story: "Marcos sent me a Puma Spin 1 board and I couldn't help but try it out on something, so why not a 400hp turbo four cylinder? It was about time to bin the old MS2 anyway!"
+    thread: "http://forum.diyefi.org/viewtopic.php?f=55&t=1069"
+    status: "I installed a new bottom end after blowing the old one on MS2 (my fault) and didn't realise that it had thin rods and blew it too (my fault again) so uninstalled the Puma and put it into the next car."
+    technical:
+      vehicle:
+        make: "Ford" # Mazda really
+        model: "Courier" # B2000 really
+        trim: "XLT" # Pretty basic
+        year: 1989
+        comments: "Hugely modified with almost nothing left untouched. Twin cam engine swap with 900hp fuel system and every other part rated to around 600hp. Except the brakes! :-o"
+      engine:
+        make: "Mazda"
+        model: "F8-DOHC" # Used to have FE-DOHC
+        config: I4
+        capacity: 1.8 # Used to be 2.0
+        comments: "Approximately 400crank hp with Holset turbo charger, custom intake and exhaust manifolds, cams from leaded 2.0 version, stiffer valve springs, different collets, R32 Skyline GTR intercooler and BOVs, RX7 \"550s\" (really 650), bosch 044 pump, 44mm Vband tial clone, etc."
+      control:
+        type: full_control
+        firmware_type: "Fred's Vanilla"
+        firmware_version: "ef9f98b1117be5412dc8b7f876c7afdf1e176fbc"
+        firmware_s19_name: "MitsiCAS-4and1"
+        hardware_type: Puma-Spin-1
+        rpm_input_style: "Mitsubishi/Mazda 4 and 1 optical CAS/Distributor disk in custom CAS housing"
+        ignition_style: "CNP four coils, four ignitors, four 5v 330ohm outputs, too weak, not good spark strength"
+        injection_style: "Batch, 1 injection per cycle, two outputs, 360 degree offset timing between outputs, 4 port injectors"
+    achievements:
+      first_start:
+        date: "2011-02-28 05:23:00" # Local time 6:23pm February 28 2011 NZST
+        location:
+          city: "Auckland"
+          region: "North Island"
+          country: NZ
+        comments: "It was run on code without scheduling such that WOT produced about 800 RPM and a VERY hot manifold."
+      first_drive:
+        date: "2011-02-28 05:23:00" # Local time 6:23pm February 28 2011 NZST
+        location:
+          city: "Auckland"
+          region: "North Island"
+          country: NZ
+        comments: "Only drove it 20m total, pumping the clutch to make it move. It ran properly a few days later with more complete code."
+      firsts:
+        - "In NZ"
+        - "Ignition"
+        - "COP Ignition"
+        - "Purpose built hardware"
+        - "Boosted engine"
+        - "DOHC engine"
+        - "Turbo engine"
+        - "Mazda" # Badged as Ford, Mazda at heart
+        - "Truck"
+        - "F Block Engine"
+
 #HotelHyundai:
 #SilverTop:
 #TurboCamaro:
